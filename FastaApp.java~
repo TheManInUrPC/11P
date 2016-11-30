@@ -1,0 +1,56 @@
+import wheelsunh.users.*;
+import java.awt.Color;
+
+
+/**
+ * FastaApp.
+ * 
+ * 
+ * @author Darien A. Blow rdb
+ * 
+ */
+public class DNASequence
+{
+    //----------------------- Instance variables ---------------------------
+
+    //------------------------- DNASequence( String ) -------------------------
+    /**
+     * Constructor.
+     * 
+     *
+     * 
+     * 
+     */
+    public DNASequence( )
+    {  
+        dnaString = dna;
+        
+        endSeq = header.indexOf(" ");
+        
+        seqId = header.substring( 1 , endSeq );
+        
+        seqHeader = header.substring( endSeq );
+        
+        
+    }
+    
+
+    
+    
+    // Think about defining useful utility methods that will simplify the code 
+    // in the public methods.
+    
+    
+    
+    //-------------------------- main ----------------------------------------
+    /**
+     * Simple test main.
+     * 
+     * @param  args String
+     */
+    
+    public static void main( String[] args )
+    {
+        
+    }
+}
