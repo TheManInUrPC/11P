@@ -62,15 +62,18 @@ public class FastaApp
       String line = s.nextLine();
       
 
-      if( line.contains( " > " ) )
+      if( line.contains( ">" ) )
       {
           
           
-        dnaString = " ";
+        
+        
         sequence = new DNASequence( header, dnaString );
         
         header = line;
         dnaSeqVect.add( sequence );
+        
+        dnaString = "";;
       }
       else
       {
@@ -121,10 +124,9 @@ public class FastaApp
             {
                 for( int i = 0; i < dnaSeqVect.size(); i++ )
                 {
-                     input3 = "Found: " + "\n" + dnaSeqVect.get( i ).getId()
-                            + " at " + dnaSeqVect.get(i).indexOf(input1[ 1 ], 0) + "\n";  
+                       
                      
-                    if( dnaSeqVect.get( i ).getId().equals( input1[ 1 ] ) )
+                    if( dnaSeqVect.get( i ).getDNASequence().contains( input1[ 1 ] ) )
                     {
                         
                         input3 = "Found: " + "\n" + dnaSeqVect.get( i ).getId()
